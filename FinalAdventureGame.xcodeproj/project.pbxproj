@@ -14,6 +14,8 @@
 		C13A64411FA3997D003C59E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C13A643F1FA3997D003C59E2 /* LaunchScreen.storyboard */; };
 		C13A644C1FA3997D003C59E2 /* FinalAdventureGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13A644B1FA3997D003C59E2 /* FinalAdventureGameTests.swift */; };
 		C13A64571FA3997D003C59E2 /* FinalAdventureGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13A64561FA3997D003C59E2 /* FinalAdventureGameUITests.swift */; };
+		C147FCAF1FB121DA00CD8F10 /* StartScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C147FCAE1FB121DA00CD8F10 /* StartScreenViewController.swift */; };
+		C18BC6291FAA2FA400E9832F /* AdventureGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18BC6281FAA2FA400E9832F /* AdventureGame.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		C13A64521FA3997D003C59E2 /* FinalAdventureGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FinalAdventureGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C13A64561FA3997D003C59E2 /* FinalAdventureGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalAdventureGameUITests.swift; sourceTree = "<group>"; };
 		C13A64581FA3997D003C59E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C147FCAE1FB121DA00CD8F10 /* StartScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenViewController.swift; sourceTree = "<group>"; };
+		C18BC6281FAA2FA400E9832F /* AdventureGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdventureGame.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,8 @@
 		C13A64351FA3997D003C59E2 /* FinalAdventureGame */ = {
 			isa = PBXGroup;
 			children = (
+				C18BC6281FAA2FA400E9832F /* AdventureGame.swift */,
+				C147FCAE1FB121DA00CD8F10 /* StartScreenViewController.swift */,
 				C13A64361FA3997D003C59E2 /* AppDelegate.swift */,
 				C13A64381FA3997D003C59E2 /* ViewController.swift */,
 				C13A643A1FA3997D003C59E2 /* Main.storyboard */,
@@ -261,6 +267,8 @@
 			files = (
 				C13A64391FA3997D003C59E2 /* ViewController.swift in Sources */,
 				C13A64371FA3997D003C59E2 /* AppDelegate.swift in Sources */,
+				C18BC6291FAA2FA400E9832F /* AdventureGame.swift in Sources */,
+				C147FCAF1FB121DA00CD8F10 /* StartScreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,6 +435,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9W5AS33N2M;
 				INFOPLIST_FILE = FinalAdventureGame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Webster.FinalAdventureGame;
@@ -441,6 +450,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9W5AS33N2M;
 				INFOPLIST_FILE = FinalAdventureGame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Webster.FinalAdventureGame;
