@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uFj-Rt-b8T">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uFj-Rt-b8T">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -59,44 +59,55 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Story Text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aOs-ze-ebs">
-                                <rect key="frame" x="16" y="83" width="343" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="DYt-CW-Kgp">
-                                <rect key="frame" x="81" y="138" width="213" height="29"/>
-                                <segments>
-                                    <segment title="First Choice"/>
-                                    <segment title="Second Choice"/>
-                                </segments>
-                            </segmentedControl>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SKz-6W-HKl">
-                                <rect key="frame" x="142" y="182" width="91" height="30"/>
-                                <state key="normal" title="Enter Answer"/>
-                                <connections>
-                                    <segue destination="DRL-DZ-IOY" kind="show" identifier="unwindSegueToStartScreen" id="B0a-5w-a2r"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="R03-tF-YiK">
+                                <rect key="frame" x="16" y="480.5" width="343" height="118.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Story Text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aOs-ze-ebs">
+                                        <rect key="frame" x="133" y="0.0" width="77.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="DYt-CW-Kgp">
+                                        <rect key="frame" x="65" y="40.5" width="213" height="29"/>
+                                        <segments>
+                                            <segment title="First Choice"/>
+                                            <segment title="Second Choice"/>
+                                        </segments>
+                                    </segmentedControl>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SKz-6W-HKl">
+                                        <rect key="frame" x="126" y="88.5" width="91" height="30"/>
+                                        <state key="normal" title="Enter Answer"/>
+                                        <connections>
+                                            <segue destination="DRL-DZ-IOY" kind="show" identifier="unwindSegueToStartScreen" id="B0a-5w-a2r"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jlr-CB-HQs">
+                                <rect key="frame" x="16" y="45" width="343" height="353"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="FOQ-6r-ugs"/>
+                                    <constraint firstAttribute="height" constant="442" id="ha2-qS-8qf"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="aOs-ze-ebs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="63" id="1pr-el-9eI"/>
-                            <constraint firstItem="aOs-ze-ebs" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="343:667" id="AqC-OB-UEA"/>
-                            <constraint firstItem="DYt-CW-Kgp" firstAttribute="top" secondItem="aOs-ze-ebs" secondAttribute="bottom" constant="39.5" id="SFP-ty-Gp5"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DYt-CW-Kgp" secondAttribute="trailing" constant="95" id="T31-t0-faB"/>
-                            <constraint firstItem="SKz-6W-HKl" firstAttribute="top" secondItem="DYt-CW-Kgp" secondAttribute="bottom" constant="16" id="Z2M-aH-nCl"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SKz-6W-HKl" secondAttribute="trailing" constant="142" id="gi8-QJ-Uu3"/>
-                            <constraint firstItem="SKz-6W-HKl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="142" id="pqc-YC-egY"/>
-                            <constraint firstItem="aOs-ze-ebs" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="xjr-nZ-eJk"/>
-                            <constraint firstItem="DYt-CW-Kgp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="95" id="zNA-Vl-iF9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="R03-tF-YiK" secondAttribute="bottom" constant="24.5" id="67d-dw-lNr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="R03-tF-YiK" secondAttribute="trailing" constant="16" id="RsS-wp-R58"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jlr-CB-HQs" secondAttribute="trailing" constant="16" id="WjV-KB-Ywh"/>
+                            <constraint firstItem="jlr-CB-HQs" firstAttribute="leading" secondItem="R03-tF-YiK" secondAttribute="leading" id="YNt-S5-Q6b"/>
+                            <constraint firstItem="R03-tF-YiK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="liN-5N-fwW"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="SegmentedController" destination="DYt-CW-Kgp" id="rCV-D7-U3D"/>
                         <outlet property="StoryLabel" destination="aOs-ze-ebs" id="leJ-g0-htL"/>
+                        <outlet property="photoImage" destination="jlr-CB-HQs" id="kl0-J8-FbF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
