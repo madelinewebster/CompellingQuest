@@ -45,12 +45,12 @@ class AdventureGame {
     
     //Fourth Bad Story Point
     func getFourthBadPoint() -> (String, String, String, String) {
-        return ("You head towards the waterfall and spot the stunning lake that surrounds it. On your way to the edge of the water your foot snags on a log, sending you tumbling into the lake. Your head smacks against rock slab and everything goes black. Guess you should have stuck to the path. ENDnChoose play again if you would like to play again.", "PLAY AGAIN", "DONE", "waterfall")
+        return ("You head towards the waterfall and spot the stunning lake that surrounds it. On your way to the edge of the water your foot snags on a log, sending you tumbling into the lake. Your head smacks against a rock slab and everything goes black. Guess you should have stuck to the path. ENDnChoose play again if you would like to play again.", "PLAY AGAIN", "DONE", "waterfall")
         
     }
     //Sixth Story Point
     func getSixthPoint() -> (String, String, String, String) {
-        return ("You choose rock. Your opponent chooses scissors. You win! The troll looks up at you his eyes filled with defeat as you push your way forward. After crossing the bridge, you find yourself standing in front of an enormous stone that almost seems to glisten in the light. You look up towards the top of the rock and spot what seems to be the hilt of a sword sticking out. You clamer up the rock making your way to the sword. Do you try to pull the sword out of the stone? Choose leave or pull.", "LEAVE", "PULL", "swoardinstone")
+        return ("You choose rock. Your opponent chooses scissors. You win! The troll looks up at you his eyes filled with defeat as you push your way forward. After crossing the bridge, you find yourself standing in front of an enormous stone that almost seems to glisten in the light. You look up towards the top of the rock and spot what seems to be the hilt of a sword sticking out. You climb up the rock making your way to the sword. Do you try to pull the sword out of the stone? Choose leave or pull.", "LEAVE", "PULL", "swoardinstone")
     }
     
     //Sixth Bad Story Point
@@ -83,13 +83,13 @@ class AdventureGame {
     
     //Ninth Story Point
     func getNinthPoint() -> (String, String, String, String) {
-        return ("You quickly catch the dragon's attention as you wave your hand in the air. He looks down at you, and smiles. Your fear melts away , as you and the dragon introduce yourselves and quickly become friends. You chat about the strange adventure you have had today, and your new dragon pal asks if he can join you on your next one. You nod yes, hoping there will be many more adventures to come. END\n\nChoose play again if you would like to play again.", "PLAY AGAIN", "DONE", "cute")
+        return ("You quickly catch the dragon's attention as you wave your hand in the air. He looks down at you, and smiles. Your fear melts away , as you and the dragon introduce yourselves and quickly become friends. You chat about the strange adventure you have had today, and your new dragon pal asks if he can join you on your next one. You nod yes, hoping there will be many more adventures to come. END Choose play again if you would like to play again.", "PLAY AGAIN", "DONE", "cute")
         
     }
     
     //Ninth Bad Story Point
     func getNinthBadPoint() -> (String, String, String, String) {
-        return ("You draw your sword, striking the dragon with all the strength you can muster. As the sword makes contact with the dragon it instantly snaps in half, not even leaving a visible mark. You have now clearly caught the attention of the dragon. He looking down at you, he rolls his eyes, right before he bruns you to a crisp. END\n\nChoose play again if you would like to play again.", "PLAY AGAIN", "DONE", "fire")
+        return ("You draw your sword, striking the dragon with all the strength you can muster. As the sword makes contact with the dragon it instantly snaps in half, not even leaving a visible mark. You have now clearly caught the attention of the dragon. He looking down at you, he rolls his eyes, right before he burns you to a crisp. END\n\nChoose play again if you would like to play again.", "PLAY AGAIN", "DONE", "fire")
         
     }
     

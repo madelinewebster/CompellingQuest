@@ -23,7 +23,7 @@ class ViewController: UIViewController {
 
         let imageName = "darkcave"
         photoImage.image = UIImage (named: imageName)
-//        photoImage.frame = CGRect(x: 0, y: 0, width: 100, height: 200)
+        photoImage.frame = CGRect(x: 0, y: 0, width: 100, height: 200)
         view.addSubview(photoImage)
         
 //        let imageName = "darkcave.png"

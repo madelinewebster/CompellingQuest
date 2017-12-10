@@ -13,7 +13,7 @@ class StartScreenViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        startLabel.text = "Welcome to your very own Choose Your Own Adventure game!\n\nIn this game you will make your own choices in your story which will result in your adventure being uniquely yours! When prompted with choices, be sure to select one of the choices and then press the Enter button. That’s all from me! Whenever you are ready, press 'Play Game' to begin."
+        startLabel.text = "Welcome to Captivating Quest - Your very own choose your own adventure game!\n\nIn this game you will make your own choices in your story which will result in your adventure being uniquely yours! When prompted with choices, be sure to select one of the choices and then press the Enter button. That’s all from me! Whenever you are ready, press 'Play Game' to begin."
         startLabel.numberOfLines = 0
 
         // Do any additional setup after loading the view.
